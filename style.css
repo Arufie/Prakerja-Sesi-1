@@ -1,0 +1,746 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: quicksand;
+}
+.overlay{
+    border: 1px none;
+    border-radius: 5px;
+    background: url(images/anime-nature-background.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    top: vh;
+    height: 130vh;
+    width: 100%;
+    margin: 0px 0px;
+}
+nav{
+    position: absolute;
+    z-index: 10;
+    word-spacing: 15px;
+    font-weight: 500;
+    height: 60px;
+    width: 100%;
+    background-color: #55b3df;
+    border: 3px solid white;
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 10px;
+}
+label.logo{
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(215, 215, 215);
+    padding: 0px 30px;
+    line-height: 60px;
+    margin-left: 15px;
+}
+nav #icon{
+    z-index: 99;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+nav ul{
+    word-spacing: 30px;
+    padding: 0px 30px;
+    line-height: 60px;
+    float: right;
+    font-size: 25px;
+}
+nav li{
+    display: inline-block;
+}
+nav a:hover{
+    color: #55b3df;
+    border-radius: 20px 3px 20px 3px;
+    background-color: #ffffff;
+    transition: .3s;
+}
+nav a{
+    border: 2px solid #747474;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+div.container{
+    display: flex;
+    flex: auto;
+    background-color: #ffffff;
+    border: 3px solid #55b3df;
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 90px;
+    height: 200px;
+    width: 100%;
+}
+.profile{
+    margin: 20px 25px;
+    border: 6px solid #3b809f;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+h1{
+    margin: 25px 5px;
+    color: #3b809f;
+}
+h4{
+    color: #3b809f;
+    position: absolute;
+    top: 77px;
+    left: 217px;
+}
+.btn1{
+    position: absolute;
+    top: 130px;
+    left: 217px;
+    height: 35px;
+    width: 80px;
+    border: hidden;
+    border-radius: 5px;
+    color: white;
+    background-color: #3b809f;
+}
+.btn2{
+    position: absolute;
+    top: 130px;
+    left: 327px;
+    height: 35px;
+    width: 80px;
+    border: hidden;
+    border-radius: 5px;
+    color: white;
+    background-color: #3b809f;
+}
+table{ 
+    color: #3b809f;
+    height: 5px;
+    position: relative;
+    top: 3.2vh;
+    left: 9vw;
+    font-size: 1.5vw;
+}
+.container2{
+    align-content: center;
+    border: 5px solid #55b3df;
+    background-color: white;
+    width: 25%;
+    height: 490px;
+    position: absolute;
+    z-index: 2;
+    top: 50vh;
+    left: 36vw;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+}
+.container2 form{
+    color: #3b809f;
+    font-weight: 1000;
+    margin: 15px 10px;
+    font-size: 16px;
+}
+.container2 input{
+    margin: 1px 0px;
+    width: 99%;
+}
+.reg{
+    background-color: #55b3df;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+div .btn3{
+    width: 110px;
+    margin: 18px 0px;
+    position: absolute;
+    left: 35.5%;
+}
+
+/* =============================== */
+/* SMALL DIMENSIONS */
+/* =============================== */
+
+@media (max-width:378px){
+    nav #icon{
+        z-index: 99;
+        top: -1.5vh;
+        right: 25px;
+        position: relative;
+        display: block;
+    }
+    nav ul{
+        z-index: 99;
+        opacity: 100%;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #55b3df;
+        top: 10vh;
+        left: -120%;
+        transition: all .3s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: hidden;
+        color: #f9f9ff;
+    }
+    nav ul.show{
+        left: 0;
+    }
+    .overlay{
+        height: 200%;
+    }
+    label.logo{
+        padding: 0px 20px;
+        margin-left: 1vw;
+    }
+    div.container{
+        z-index: 1;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+        top: 90px;
+        left: 13px;
+        height: 80vh;
+        width: 93%;
+    }
+    .profile{
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    h1{
+        float: right;
+        position: absolute;
+        top: 4vh;
+        right: 4vw;
+        font-size: 7vw;
+    }
+    h4{
+        position: absolute;
+        float: left;
+        top: 15vh;
+        left: 54vw;
+        font-size: 4vw;
+    }
+    .btn1{
+        position: absolute;
+        top: 65vh;
+        left: 6.7vw;
+        width: 100px;
+    }
+    .btn2{
+        position: absolute;
+        top: 65vh;
+        left: 59vw;
+        width: 100px;
+    }
+    table{     
+        height: 5px;
+        position: relative;
+        top: -10vh;
+        left: 5vw;
+        font-size: 4.5vw;
+    }
+    .container2{
+        align-content: center;
+        border: 5px solid #55b3df;
+        background-color: white;
+        width: 90%;
+        height: 490px;
+        position: absolute;
+        z-index: 2;
+        top: 100vh;
+        left: 4vw;
+        border-radius: 10px;
+        display: flex;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    }
+    .container2 form{
+        color: #3b809f;
+        font-weight: 1000;
+        margin: 15px 10px;
+        font-size: 16px;
+    }
+    .container2 input{
+        margin: 1px 0px;
+        width: 99%;
+    }
+    .reg{
+        background-color: #55b3df;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+    div .btn3{
+        width: 110px;
+        margin: 18px 0px;
+        position: absolute;
+        left: 35.5%;
+    }
+}
+
+/* =============================== */
+/* MEDIUM DIMENSIONS */
+/* =============================== */
+
+@media (min-width:379px) and (max-width: 558px){
+    nav #icon{
+        z-index: 99;
+        top: -1.5vh;
+        right: 25px;
+        position: relative;
+        display: block;
+    }
+    nav ul{
+        z-index: 99;
+        opacity: 100%;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #55b3df;
+        top: 10vh;
+        left: -120%;
+        transition: all .3s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: hidden;
+        color: #f9f9ff;
+    }
+    nav ul.show{
+        left: 0;
+    }
+    .overlay{
+        height: 200%;
+    }
+    label.logo{
+        padding: 0px 20px;
+        margin-left: 1vw;
+    }
+    div.container{
+        z-index: 1;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+        top: 90px;
+        left: 3vw;
+        height: 80vh;
+        width: 93%;
+    }
+    .profile{
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    h1{
+        float: right;
+        position: absolute;
+        top: 4vh;
+        right: 10vw;
+        font-size: 7vw;
+    }
+    h4{
+        position: absolute;
+        float: left;
+        top: 15vh;
+        left: 48vw;
+        font-size: 4vw;
+    }
+    .btn1{
+        position: absolute;
+        top: 65vh;
+        left: 6.7vw;
+        width: 100px;
+    }
+    .btn2{
+        position: absolute;
+        top: 65vh;
+        left: 66vw;
+        width: 100px;
+    }
+    table{     
+        height: 5px;
+        position: relative;
+        top: -10vh;
+        left: 8vw;
+        font-size: 4vw;
+    }
+    .container2{
+        justify-content: center;
+        border: 5px solid #55b3df;
+        background-color: white;
+        width: 90%;
+        height: 490px;
+        position: absolute;
+        z-index: 2;
+        top: 100vh;
+        left: 3vw;
+        border-radius: 10px;
+        display: flex;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    }
+    .container2 form{
+        color: #3b809f;
+        font-weight: 1000;
+        margin: 15px 10px;
+        font-size: 16px;
+    }
+    .container2 input{
+        margin: 1px 0px;
+        width: 100%;
+    }
+    .reg{
+        background-color: #55b3df;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+    div .btn3{
+        width: 110px;
+        margin: 18px 0px;
+        position: absolute;
+        left: 35.5%;
+    }
+}
+/* ============================= */
+/* LARGE DIMENSIONS */
+/* ============================= */
+
+@media (min-width:559px) and (max-width: 867px){
+    nav #icon{
+        z-index: 99;
+        top: -1.5vh;
+        right: 25px;
+        position: relative;
+        display: block;
+    }
+    nav ul{
+        z-index: 99;
+        opacity: 100%;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #55b3df;
+        top: 10vh;
+        left: -120%;
+        transition: all .3s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: hidden;
+        color: #f9f9ff;
+    }
+    nav ul.show{
+        left: 0;
+    }
+    .overlay{
+        height: 200%;
+    }
+    label.logo{
+        padding: 0px 20px;
+        margin-left: 1vw;
+    }
+    div.container{
+        flex-direction: row;
+        z-index: 1;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+        top: 90px;
+        left: 3.5vw;
+        height: 80vh;
+        width: 93%;
+    }
+    .profile{
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    h1{
+        float: right;
+        position: absolute;
+        top: 5vh;
+        right: 22vw;
+        font-size: 5vw;
+    }
+    h4{
+        position: absolute;
+        float: left;
+        top: 20vh;
+        left: 40vw;
+        font-size: 3vw;
+    }
+    .btn1{
+        position: absolute;
+        top: 65vh;
+        left: 6.7vw;
+        width: 100px;
+    }
+    .btn2{
+        position: absolute;
+        top: 65vh;
+        left: 66vw;
+        width: 100px;
+    }
+    table{     
+        height: 5px;
+        position: relative;
+        top: -10vh;
+        left: 8vw;
+        font-size: 4vw;
+    }
+    .container2{
+        justify-content: center;
+        align-content: center;
+        border: 5px solid #55b3df;
+        background-color: white;
+        width: 90%;
+        height: 490px;
+        position: absolute;
+        z-index: 2;
+        top: 100vh;
+        left: 3vw;
+        border-radius: 10px;
+        display: flex;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    }
+    .container2 form{
+        color: #3b809f;
+        font-weight: 1000;
+        margin: 15px 10px;
+        font-size: 16px;
+    }
+    .container2 input{
+        margin: 1px 0px;
+        width: 100%;
+    }
+    .reg{
+        background-color: #55b3df;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+    div .btn3{
+        width: 110px;
+        margin: 18px 0px;
+        position: absolute;
+        left: 43%;
+    }
+}
+@media (min-width:750px) and (max-width: 868px){
+    table{ 
+        color: #3b809f;
+        height: 5px;
+        position: absolute;
+        top: 33vh;
+        left: 20vw;
+        font-size: 3vw;
+    }
+}
+
+/* ============================= */
+/* XL DIMENSIONS */
+/* ============================= */
+
+@media (min-width:869px) and (max-width: 992px){
+    nav{
+        position: absolute;
+        z-index: 10;
+        word-spacing: 15px;
+        font-weight: 500;
+        height: 60px;
+        width: 100%;
+        background-color: #55b3df;
+        border: 3px solid white;
+        border-right: 0px;
+        border-left: 0px;
+        border-radius: 10px;
+    }
+    label.logo{
+        letter-spacing: 3px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        color: rgb(215, 215, 215);
+        padding: 0px 30px;
+        line-height: 60px;
+        margin-left: 15px;
+    }
+    nav ul{
+        word-spacing: 30px;
+        padding: 0px 30px;
+        line-height: 60px;
+        float: right;
+        font-size: 25px;
+    }
+    nav li{
+        display: inline-block;
+    }
+    nav a{
+        position: relative;
+        top: -9.5vh;
+        border: 2px solid #747474;
+        color: white;
+        font-size: 2.2vw;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+    nav a:hover{
+        color: #55b3df;
+        border-radius: 20px 3px 20px 3px;
+        background-color: #ffffff;
+        transition: .3s;
+    }
+    div.container{
+        display: flex;
+        flex: auto;
+        background-color: #ffffff;
+        border: 3px solid #55b3df;
+        border-right: 0px;
+        border-left: 0px;
+        border-radius: 10px;
+        z-index: 10;
+        position: absolute;
+        top: 90px;
+        height: 200px;
+        width: 100%;
+    }
+    .profile{
+        margin: 20px 25px;
+        border: 6px solid #3b809f;
+        border-radius: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    h1{
+        margin: 25px 5px;
+        color: #3b809f;
+    }
+    h4{
+        color: #3b809f;
+        position: absolute;
+        top: 77px;
+        left: 217px;
+    }
+    .btn1{
+        position: absolute;
+        top: 130px;
+        left: 217px;
+        height: 35px;
+        width: 80px;
+        border: hidden;
+        border-radius: 5px;
+        color: white;
+        background-color: #3b809f;
+    }
+    .btn2{
+        position: absolute;
+        top: 130px;
+        left: 327px;
+        height: 35px;
+        width: 80px;
+        border: hidden;
+        border-radius: 5px;
+        color: white;
+        background-color: #3b809f;
+    }
+    table{ 
+        color: #3b809f;
+        height: 5px;
+        position: relative;
+        top: 5vh;
+        left: 9vw;
+        font-size: 2.2vw;
+    }
+    .container2{
+        align-content: center;
+        border: 5px solid #55b3df;
+        background-color: white;
+        width: 25%;
+        height: 490px;
+        position: absolute;
+        z-index: 2;
+        top: 50vh;
+        left: 36vw;
+        border-radius: 10px;
+        display: flex;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    }
+    .container2 form{
+        color: #3b809f;
+        font-weight: 1000;
+        margin: 15px 10px;
+        font-size: 16px;
+    }
+    .container2 input{
+        margin: 1px 0px;
+        width: 99%;
+    }
+    .reg{
+        background-color: #55b3df;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+    div .btn3{
+        width: 110px;
+        margin: 18px 0px;
+        position: absolute;
+        left: 27.5%;
+    }
+}
+
+@media (min-width: 995px) and (max-width: 1200px){
+    table{ 
+        color: #3b809f;
+        height: 5px;
+        position: relative;
+        top: 5vh;
+        left: 9vw;
+        font-size: 2vw;
+    }
+}

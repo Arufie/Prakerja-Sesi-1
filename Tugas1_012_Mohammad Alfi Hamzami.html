@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/97455e3e26.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+        </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400"300;600;700&display=swap" rel="stylesheet">
+    <title> Tugas 1 </title>
+</head>
+<body>
+    <nav>
+        <label class="logo">TUGAS.1</label>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">INVENTORY</a></li>
+            </ul>
+
+            <label id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <img class="profile" src="images/alfi-hamzami-pfp.jpg" alt="profile">
+        <h1> Hi, it's Alfie </h1>
+        <h4> Junior Front End Developer </h4>
+            <table class="text">
+                <tbody>
+                    <tr>
+                        <td style="font-weight:bold;">Name</td><br>
+                        <td>: Mohammad Alfi Hamzami</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;">Age</td><br>
+                        <td>: 22 years old</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;">Experience</td><br>
+                        <td>: 1 month</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;">Location</td><br>
+                        <td>: Kab. Tangerang</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;">Email</td><br>
+                        <td>: alfihamzami6@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        <button class="btn1">RESUME</button>
+        <button class="btn2">CONTACT</button>
+    </div>
+
+    <div class="container2">
+        <form>
+            <div class="reg">Registration</div>
+            <div class="input-nm">
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Enter your name" size="44px" style="border-radius: 5px; height: 20px;">
+            </div>
+            <br>
+            <div class="input-pw">
+                <label for="name">Password</label><br>
+                <input type="text" placeholder="Enter your password" size="44px" style="border-radius: 5px; height: 20px;">
+            </div>
+            <br>
+            <div class="input-cpw">
+                <label for="name">Confirm Password</label><br>
+                <input type="text" placeholder="Confirm your password" size="44px" style="border-radius: 5px; height: 20px;">
+            </div>
+            <br>
+            <div class="input-email">
+                <label for="name">Email</label><br>
+                <input type="text" placeholder="Enter your email" size="44px" style="border-radius: 5px; height: 20px;">
+            </div>
+            <br>
+            <div class="input-pn">
+                <label for="name">Phone Number</label><br>
+                <input type="text" placeholder="Enter your phone number" size="44px" style="border-radius: 5px; height: 20px;">
+            </div>
+            <br>
+            <div class="input-loc">
+                <label for="name">Location</label><br>
+                <input type="text" placeholder="Enter your location" size="44px" style="border-radius: 5px; height: 20px;">
+            </div>
+            <div class="btn3">
+                <input type="submit" value="SUBMIT" style="border-radius: 5px; height: 35px; background-color: #55b3df; color: white; border: none; font-weight: 1000; font-family: quicksand;">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
